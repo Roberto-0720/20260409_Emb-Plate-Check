@@ -1,0 +1,8 @@
+{
+  "project": "EmbedPlate",
+  "description": "Embedded Plate Anchorage Design Tool per ACI 318-08 Appendix D",
+  "version": "1.0.0",
+  "language": "python",
+  "framework": "PyQt5",
+  "units": "SI (kN, mm, MPa)"
+}

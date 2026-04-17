@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<title>Embedded Plate Calculation Report</title>
+<style>
+body { font-family: 'Segoe UI', sans-serif; max-width: 900px; margin: 40px auto; color: #2c3e50; }
+h1 { border-bottom: 3px solid #2c3e50; padding-bottom: 10px; }
+h2 { color: #34495e; margin-top: 30px; }
+table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+th, td { border: 1px solid #bdc3c7; padding: 8px 12px; text-align: center; }
+th { background: #34495e; color: white; }
+tr:nth-child(even) { background: #f9f9f9; }
+.overall { font-size: 1.4em; font-weight: bold; color: #27ae60; padding: 15px;
+            border: 3px solid #27ae60; text-align: center; border-radius: 8px; margin: 20px 0; }
+.info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.info-grid div { background: #ecf0f1; padding: 8px 12px; border-radius: 4px; }
+.info-grid span { font-weight: bold; }
+</style>
+</head><body>
+<h1>Embedded Plate Design — ACI 318-08 Appendix D</h1>
+<p><em>Report generated: 2026-04-09 22:28</em></p>
+<div class="info-grid">
+    <div><span>Project:</span> </div>
+    <div><span>Subject:</span> </div>
+    <div><span>Engineer:</span> </div>
+    <div><span>Checker:</span> —</div>
+</div>
+
+<div class="overall">OVERALL: OK</div>
+
+<h2>Input Summary</h2>
+<table>
+<tr><th>Parameter</th><th>Value</th><th>Unit</th></tr>
+<tr><td>Nua (Tension)</td><td>28.91</td><td>kN</td></tr>
+<tr><td>Vua,x (Shear X)</td><td>22.24</td><td>kN</td></tr>
+<tr><td>Vua,y (Shear Y)</td><td>22.24</td><td>kN</td></tr>
+<tr><td>Stud Diameter</td><td>15.9</td><td>mm</td></tr>
+<tr><td>Embedment Depth (hef)</td><td>241.3</td><td>mm</td></tr>
+<tr><td>Member Thickness (ha)</td><td>304.8</td><td>mm</td></tr>
+<tr><td>f'c</td><td>20.7</td><td>MPa</td></tr>
+<tr><td>futa</td><td>399.9</td><td>MPa</td></tr>
+</table>
+
+<h2>Embedment Strength Checks</h2>
+<table>
+<tr><th>#</th><th>Check</th><th>ΦRn (kN)</th><th>Demand (kN)</th><th>Ratio</th><th>Status</th></tr>
+<tr>
+            <td>1</td><td>Steel Strength in Tension (D.5.1)</td>
+            <td>59.98</td><td>14.45</td>
+            <td>0.241</td>
+            <td style="color:#27ae60;font-weight:bold">OK</td>
+        </tr>
+<tr>
+            <td>2</td><td>Concrete Breakout in Tension (D.5.2)</td>
+            <td>140.06</td><td>28.91</td>
+            <td>0.206</td>
+            <td style="color:#27ae60;font-weight:bold">OK</td>
+        </tr>
+<tr>
+            <td>3</td><td>Pullout Strength in Tension (D.5.3)</td>
+            <td>64.85</td><td>14.45</td>
+            <td>0.223</td>
+            <td style="color:#27ae60;font-weight:bold">OK</td>
+        </tr>
+<tr>
+            <td>4</td><td>Side-Face Blowout (D.5.4)</td>
+            <td>N/A</td><td>N/A</td>
+            <td>N/A</td>
+            <td style="color:#95a5a6;font-weight:bold">N/A</td>
+        </tr>
+<tr>
+            <td>5</td><td>Steel Strength in Shear (D.6.1)</td>
+            <td>51.99</td><td>15.73</td>
+            <td>0.302</td>
+            <td style="color:#27ae60;font-weight:bold">OK</td>
+        </tr>
+<tr>
+            <td>6</td><td>Breakout in Shear X-Perp (D.6.2)</td>
+            <td>43.17</td><td>22.24</td>
+            <td>0.515</td>
+            <td style="color:#27ae60;font-weight:bold">OK</td>
+        </tr>
+<tr>
+            <td>7</td><td>Breakout in Shear Y-Perp (D.6.2)</td>
+            <td>58.42</td><td>22.24</td>
+            <td>0.381</td>
+            <td style="color:#27ae60;font-weight:bold">OK</td>
+        </tr>
+<tr>
+            <td>8</td><td>Breakout in Shear X-Parallel (D.6.2)</td>
+            <td>116.83</td><td>22.24</td>
+            <td>0.190</td>
+            <td style="color:#27ae60;font-weight:bold">OK</td>
+        </tr>
+<tr>
+            <td>9</td><td>Breakout in Shear Y-Parallel (D.6.2)</td>
+            <td>86.34</td><td>22.24</td>
+            <td>0.258</td>
+            <td style="color:#27ae60;font-weight:bold">OK</td>
+        </tr>
+<tr>
+            <td>10</td><td>Concrete Pryout in Shear (D.6.3)</td>
+            <td>299.77</td><td>31.45</td>
+            <td>0.105</td>
+            <td style="color:#27ae60;font-weight:bold">OK</td>
+        </tr>
+<tr>
+            <td>11</td><td>Interaction Check (D.7)</td>
+            <td>1.20</td><td>0.756</td>
+            <td>0.630</td>
+            <td style="color:#27ae60;font-weight:bold">OK</td>
+        </tr>
+
+</table>
+
+<h2>Dimensional Requirements</h2>
+<table>
+<tr><th>Check</th><th>Details</th><th>Status</th></tr>
+<tr>
+            <td>Minimum Spacing</td><td>s_min=63.5 mm, s_act=101.6 mm</td>
+            <td style="color:#27ae60;font-weight:bold">OK</td>
+        </tr>
+<tr>
+            <td>Minimum Concrete Edge Distance</td><td>min=95.3 mm, act=304.8 mm</td>
+            <td style="color:#27ae60;font-weight:bold">OK</td>
+        </tr>
+<tr>
+            <td>Minimum Steel Edge Distance</td><td>min=22.2 mm, act=50.8 mm</td>
+            <td style="color:#27ae60;font-weight:bold">OK</td>
+        </tr>
+<tr>
+            <td>Minimum Concrete Thickness</td><td>ha_min=260.4 mm, ha=304.8 mm</td>
+            <td style="color:#27ae60;font-weight:bold">OK</td>
+        </tr>
+
+</table>
+
+<p style="text-align:center; color:#95a5a6; margin-top:40px;">
+Embedded Plate Tool — ACI 318-08 Appendix D | Generated by EmbedPlate Calculator
+</p>
+</body></html>

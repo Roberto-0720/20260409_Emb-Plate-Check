@@ -1,0 +1,15 @@
+Hi Claude,
+
+File thiết kế Embedded Plate như đính kèm, tôi nghĩ bạn hoàn toàn có thể đọc được file này.
+
+Giúp tôi đọc, nghiên cứu nó, sau đó chuyển nó sang Tool python giúp tôi nhé với các yêu cầu sau đây:
+
+* Tool python dạng bảng điều khiển GUI
+
+* Tool được module hóa chuyên nghiệp với các file main.py, requirement.txt, README.md, các thư mục ui, util, data (lưu trữ các bảng tra, hệ số sử dụng trong Tool...), resource (dùng để chưa các file dạng ảnh, người dụng có thể tự tạo để đưa vào Tool, mainwindows, export report...), .claude...
+
+* Đơn vị: kN, m
+
+* Hãy nghiên cứu và giúp tôi thiết kế một Tool chuyên nghiệp, giao diện bảng điều khiển đẹp mắt.
+
+* Các file trong Tool sắp xếp chuyên nghiệp, dễ dàng maintain, bổ sung ở những lần sau.
